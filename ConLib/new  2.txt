@@ -1,0 +1,36 @@
+ txt = s1("Size = ", 1.485255842, " and ", 154.245557745, " mm");
+            Console.WriteLine(txt);
+
+
+        // лецю-лернд бшбндю ярпнйх !!!
+        static public string s1(params object[] list)
+        {
+            string txt="";
+            for (int i = 0; i < list.Length; i++)
+            {
+                if (list[i].GetType() == typeof(double))
+                {
+                    double val = (double)list[i];
+                    val = r1(val);
+                    list[i] = val;
+                }             
+                txt += list[i].ToString();                
+            }   // for
+            return txt;
+        }   // end of - s(params object[] list)
+
+        static public double r1(double val)
+        {
+            int num = 0;
+            for (;;)
+            {
+                if (val < 1) { num = 5; break; }
+                if (val < 10) { num = 4; break; }
+                if (val < 100) { num = 3; break; }
+                if (val < 1000) { num = 2; break; }
+                if (val < 10000) { num = 1; break; }
+                if (val >= 10000) { num = 0; break; }
+            }
+            //Math.Round(val, num);
+            return Math.Round(val, num);
+        }   // end of - after_divider()

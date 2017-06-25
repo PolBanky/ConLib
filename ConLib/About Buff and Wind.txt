@@ -1,0 +1,16 @@
+﻿//int wd, ht, wdWnd, htWnd, wdWndMax, htWndMax;
+            //wd = Console.BufferWidth;
+            //ht = Console.BufferHeight;
+            //wdWnd = Console.WindowWidth;
+            //htWnd = Console.WindowHeight;
+            //wdWndMax = Console.LargestWindowWidth;
+            //htWndMax = Console.LargestWindowHeight;
+                        
+            //s("Width Buff = ", wd, ";  Heigth Buff = ", ht);
+            //s("\nWidth Wind = ", wdWnd, ";  Heigth Wind = ", htWnd);
+            //s("\nWidth Wind Max = ", wdWndMax, ";  Heigth Wind Max = ", htWndMax);
+            //Continue();
+            ////Buffer
+            //Console.SetWindowSize(wdWnd - 5, htWnd - 5);  // Размер окна консоли
+            //Console.SetBufferSize(wd - 5, ht);  // Размер окна консоли
+            //Console.ForegroundColor = ConsoleColor.Yellow;
